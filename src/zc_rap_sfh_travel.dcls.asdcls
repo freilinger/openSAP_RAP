@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access Control for projection ZC_RAP_SFH_TRAVEL'
+@MappingRole: true
+define role ZC_RAP_SFH_TRAVEL {
+    grant
+        select
+            on
+                ZC_RAP_SFH_TRAVEL
+                    where
+                        inheriting conditions from entity ZI_RAP_SFH_TRAVEL;
+                        
+}
